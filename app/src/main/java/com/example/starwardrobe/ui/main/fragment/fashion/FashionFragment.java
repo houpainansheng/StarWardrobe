@@ -10,6 +10,9 @@ import android.widget.RadioGroup;
 
 import com.example.starwardrobe.R;
 import com.example.starwardrobe.R2;
+import com.example.starwardrobe.ui.main.fragment.fashion.fragament.GuangZhuFragament;
+import com.example.starwardrobe.ui.main.fragment.fashion.fragament.TuiJianFragament;
+import com.example.starwardrobe.ui.main.fragment.fashion.fragament.ZuiXinFragament;
 import com.rock.mvplibrary.base.BaseFragment;
 
 import butterknife.BindView;
@@ -47,7 +50,7 @@ public class FashionFragment extends BaseFragment implements RadioGroup.OnChecke
 
 
         fashin_rg.setOnCheckedChangeListener(this);
-
+        switchPage(TuiJianFragament.class);
 
 
 
