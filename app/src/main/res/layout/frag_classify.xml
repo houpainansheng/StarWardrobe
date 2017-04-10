@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:background="@color/colorWhite"
+        >
+         <Button
+             android:id="@+id/classify_frag_head_search"
+             android:layout_width="0dp"
+             android:layout_weight="5"
+             android:layout_height="wrap_content"
+             android:text="商品/品牌/帖子/红人 "
+             android:gravity="left|center"
+             android:textColor="@color/colorGray6"
+             android:layout_marginLeft="15dp"
+             android:drawableLeft="@mipmap/buttom_home_search"
+             android:background="@color/colorGraye"/>
+
+         <ImageView
+             android:id="@+id/classify_frag_head_shop"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:src="@mipmap/button_shopping"
+             android:layout_alignParentRight="true"
+             />
+     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite"
+        >
+        <ListView
+            android:id="@+id/classify_frag_left_list"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/colorGraye"
+            />
+        <GridView
+            android:id="@+id/classify_frag_right_grid"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:numColumns="3"
+           />
+
+    </LinearLayout>
+</LinearLayout>

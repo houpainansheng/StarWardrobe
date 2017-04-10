@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.example.starwardrobe.R;
 import com.example.starwardrobe.R2;
+import com.example.starwardrobe.ui.main.fragment.classify.ClassifyFragment;
 import com.example.starwardrobe.ui.main.fragment.fashion.FashionFragment;
 import com.rock.mvplibrary.base.BaseActivity;
 
@@ -142,7 +143,7 @@ mGroup.setOnCheckedChangeListener(this);
 
             case R.id.activity_main_button_class:
                 Toast.makeText(this, "点击了分类", Toast.LENGTH_SHORT).show();
-
+                switchPage(ClassifyFragment.TAG);
                 break;
 
             case R.id.activity_main_button_bbs:
