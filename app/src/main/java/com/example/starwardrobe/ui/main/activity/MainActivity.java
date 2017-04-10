@@ -1,6 +1,5 @@
 package com.example.starwardrobe.ui.main.activity;
 
-import android.graphics.drawable.Drawable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -12,6 +11,7 @@ import android.widget.Toast;
 
 import com.example.starwardrobe.R;
 import com.example.starwardrobe.R2;
+import com.example.starwardrobe.ui.main.fragment.fashion.FashionFragment;
 import com.rock.mvplibrary.base.BaseActivity;
 
 import java.util.Timer;
@@ -50,25 +50,25 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
     @Override
     public void initView() {
         //设置RadioButton图片大小
-        Drawable drawableStore = getResources().getDrawable(R.drawable.main_rbtn_store_selector);
-        drawableStore.setBounds(0,0,50,50);
-        mStore.setCompoundDrawables(null,drawableStore,null,null);
-
-        Drawable drawableClass = getResources().getDrawable(R.drawable.main_rbtn_classification_selector);
-        drawableClass.setBounds(0,0,50,50);
-        mClass.setCompoundDrawables(null,drawableClass,null,null);
-
-        Drawable drawableBbs = getResources().getDrawable(R.drawable.main_rbtn_bbs_selector);
-        drawableBbs.setBounds(0,0,50,50);
-        mBbs.setCompoundDrawables(null,drawableBbs,null,null);
-
-        Drawable drawableMessage = getResources().getDrawable(R.drawable.main_rbtn_message_selector);
-        drawableMessage.setBounds(0,0,50,50);
-        mMassage.setCompoundDrawables(null,drawableMessage,null,null);
-
-        Drawable drawableMy = getResources().getDrawable(R.drawable.main_rbtn_my_selector);
-        drawableMy.setBounds(0,0,50,50);
-        mMy.setCompoundDrawables(null,drawableMy,null,null);
+//        Drawable drawableStore = getResources().getDrawable(R.drawable.main_rbtn_store_selector);
+//        drawableStore.setBounds(0,0,50,50);
+//        mStore.setCompoundDrawables(null,drawableStore,null,null);
+//
+//        Drawable drawableClass = getResources().getDrawable(R.drawable.main_rbtn_classification_selector);
+//        drawableClass.setBounds(0,0,50,50);
+//        mClass.setCompoundDrawables(null,drawableClass,null,null);
+//
+//        Drawable drawableBbs = getResources().getDrawable(R.drawable.main_rbtn_bbs_selector);
+//        drawableBbs.setBounds(0,0,50,50);
+//        mBbs.setCompoundDrawables(null,drawableBbs,null,null);
+//
+//        Drawable drawableMessage = getResources().getDrawable(R.drawable.main_rbtn_message_selector);
+//        drawableMessage.setBounds(0,0,50,50);
+//        mMassage.setCompoundDrawables(null,drawableMessage,null,null);
+//
+//        Drawable drawableMy = getResources().getDrawable(R.drawable.main_rbtn_my_selector);
+//        drawableMy.setBounds(0,0,50,50);
+//        mMy.setCompoundDrawables(null,drawableMy,null,null);
 
 mGroup.setOnCheckedChangeListener(this);
 
@@ -148,6 +148,7 @@ mGroup.setOnCheckedChangeListener(this);
             case R.id.activity_main_button_bbs:
                 Toast.makeText(this, "点击了时尚圈", Toast.LENGTH_SHORT).show();
 
+                switchPage(FashionFragment.TAG);
                 break;
 
             case R.id.activity_main_button_massage:

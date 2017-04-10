@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+
+            android:id="@+id/frash_iv_find"
+            android:layout_width="50dp"
+
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher" />
+
+        <RadioGroup
+            android:id="@+id/fashin_rg"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/fashin_rb_guangzhu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="关注"
+                android:textColor="@drawable/main_tbtn_text_color_selector" />
+
+            <RadioButton
+                android:id="@+id/fashin_rb_tuijian"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="推荐"
+                android:textColor="@drawable/main_tbtn_text_color_selector" />
+
+            <RadioButton
+                android:id="@+id/fashin_rb_zuixin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="最新"
+                android:textColor="@drawable/main_tbtn_text_color_selector" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/fashin_iv_di"
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorDiBu"
+            android:layout_width="60dp"
+            android:layout_height="2sp" />
+
+        <ImageView
+            android:id="@+id/fashin_iv_pic"
+            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fashin_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
