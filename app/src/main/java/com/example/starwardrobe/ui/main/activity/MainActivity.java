@@ -13,6 +13,7 @@ import com.example.starwardrobe.R;
 import com.example.starwardrobe.R2;
 import com.example.starwardrobe.ui.main.fragment.classify.ClassifyFragment;
 import com.example.starwardrobe.ui.main.fragment.fashion.FashionFragment;
+import com.example.starwardrobe.ui.main.fragment.my.MyFragment;
 import com.rock.mvplibrary.base.BaseActivity;
 
 import java.util.Timer;
@@ -154,11 +155,10 @@ mGroup.setOnCheckedChangeListener(this);
 
             case R.id.activity_main_button_massage:
                 Toast.makeText(this, "点击了消息", Toast.LENGTH_SHORT).show();
-
                 break;
 
             case R.id.activity_main_button_my:
-                Toast.makeText(this, "点击了我的", Toast.LENGTH_SHORT).show();
+                switchPage(MyFragment.TAG);
             break;
         }
     }

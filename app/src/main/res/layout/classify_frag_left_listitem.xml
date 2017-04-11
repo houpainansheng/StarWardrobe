@@ -12,6 +12,6 @@
          android:text="标题"
          android:textSize="18sp"
          android:gravity="center"
-         android:clickable="true"
+         android:background="@drawable/classify_item_selector"
          />
 </LinearLayout>
